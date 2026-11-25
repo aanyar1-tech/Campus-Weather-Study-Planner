@@ -1,3 +1,5 @@
+<img width="1291" height="829" alt="Screenshot (418)" src="https://github.com/user-attachments/assets/6401d0c9-051b-4b92-a8d5-762276739500" />
+<img width="1012" height="773" alt="Screenshot (419)" src="https://github.com/user-attachments/assets/e150e49f-fd33-45b1-bc38-21bce0c6f738" />
 # Campus-Weather-Study-Planner
 # Campus Weather & Study Planner
 
@@ -28,7 +30,10 @@ Students often juggle outdoor breaks, campus commutes, and deep-focus study sess
 - **Study Task Management:** Create, filter, search, and sort study tasks with client-side persistence so your schedule stays intact across page refreshes.
 - **Input Validation & Fallback Error Handling:** Gracefully handles blank or invalid city names, upstream weather API errors, and request timeouts with clear UI feedback and structured HTTP error responses without crashing the server.
 
- API Endpoints & Error Handling
+
+---
+
+## API Endpoints & Error Handling
 
 | Endpoint | Method | Purpose | Behavior on Error / Edge Cases |
 | :--- | :--- | :--- | :--- |
@@ -45,7 +50,8 @@ Campus-Weather-Study-Planner/
 ├── docs/                 # Terminal verification screenshots (lb-loop.png, lb-headers.png)
 ├── public/               # Frontend HTML, CSS, and client-side JavaScript
 ├── server.js             # Express/Node.js backend, API routes, and error handlers
-├── deploy_lb.sh          # Load balancer / reverse proxy deployment script
+├── deploy_lb.sh          # Load balancer deployment script
+├── deploy_web.sh         # Web node deployment script
 ├── .env.example          # Environment variable template (safe for Git)
 ├── .gitignore            # Excludes .env, node_modules, and local logs
 ├── package.json          # Project metadata, scripts, and dependencies
