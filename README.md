@@ -1,3 +1,5 @@
+<img width="1291" height="829" alt="Screenshot (418)" src="https://github.com/user-attachments/assets/6401d0c9-051b-4b92-a8d5-762276739500" />
+<img width="1012" height="773" alt="Screenshot (419)" src="https://github.com/user-attachments/assets/e150e49f-fd33-45b1-bc38-21bce0c6f738" />
 # Campus-Weather-Study-Planner
 # Campus Weather & Study Planner
 
