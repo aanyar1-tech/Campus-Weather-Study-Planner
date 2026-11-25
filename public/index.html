@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campus Weather &amp; Study Planner</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand-wrap"
+      <div class="brand-icon" aria-hidden="true">CW</div>
+      <div>
+        <h1>Campus Weather &amp; Study Planner</h1>
+        <p class="subtitle">Live campus weather, predicted study windows &amp; smart session planning</p>
+      </div>
+    </div>
+
+    <div class="meta-group">
+      <span id="server-badge" class="pill pill-light">Host: local</span>
+      <span id="cap-badge" class="pill pill-bright">Daily Goal: 0 / 240 mins</span>
+    </div>
+  </header>
+
+  <section class="search-strip">
+    <div class="search-box">
+      <input
+        id="global-search-input"
+        type="search"
+        placeholder="Search study plans, courses, or weather predictions (e.g. rain, Nginx, clear)..."
+        aria-label="Search plans and weather predictions"
+      />
+      <button id="clear-search-btn" type="button" class="btn btn-outline">Clear</button>
+    </div>
+  </section>
+
+  <main class="main-grid">
+    <!-- Left Column: Current Weather & Campus Prediction -->
+    <div class="left-column">
+      <section class="card weather-card">
+        <div class="card-header">
+          <h2>Campus Weather Now</h2>
+          <span id="weather-source" class="tag">Loading...</span>
+        </div>
+
+        <form id="weather-form" class="inline-form">
+          <input
+            id="city-input"
+            type="text"
+            value="Kigali"
+            placeholder="Campus city (e.g. Kigali)..."
+            aria-label="Campus city"
+          />
+          <button type="submit" class="btn btn-blue">Check</button>
+        </form>
+
+        <div id="weather-display" class="weather-hero">
+          <p class="muted">Loading campus weather...</p>
+        </div>
+
+        <div class="tip-banner">
+          <strong>Smart Study Tip:</strong>
+          <span id="advice-text">Fetching recommendation...</span>
+        </div>
+      </section>
+
+      <section class="card prediction-card">
+        <div class="card-header">
+          <h2>Campus Weather Prediction</h2>
+          <span id="forecast-count" class="tag">0 slots</span>
+        </div>
+        <div id="forecast-list" class="forecast-list">
+          <p class="muted">Loading predicted intervals...</p>
+        </div>
+      </section>
+    </div>
+
+    <!-- Right Column: Study Session Planner -->
+    <section class="card planner-card">
+      <div class="card-header planner-header">
+        <h2>Study Session Planner</h2>
+        <div class="cap-box">
+          <label for="daily-cap-input">Daily Cap (min):</label>
+          <input id="daily-cap-input" type="number" min="30" max="960" step="15" value="240" />
+        </div>
+      </div>
+
+      <form id="plan-form" class="plan-form">
+        <input
+          id="topic-input"
+          type="text"
+          placeholder="Study topic (e.g. Load Balancing, SQL Indexing)..."
+          required
+        />
+        <input
+          id="course-input"
+          type="text"
+          placeholder="Course / tag (e.g. DevOps, DB)"
+        />
+        <input
+          id="duration-input"
+          type="number"
+          min="10"
+          max="360"
+          step="5"
+          value="45"
+          title="Duration in minutes"
+        />
+        <button id="add-btn" type="submit" class="btn btn-blue">Add Plan</button>
+      </form>
+
+      <div class="toolbar-row">
+        <div class="filter-group" role="group" aria-label="Filter study plans">
+          <button type="button" class="filter-btn active" data-filter="all">All</button>
+          <button type="button" class="filter-btn" data-filter="active">Active</button>
+          <button type="button" class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+
+        <div class="sort-group">
+          <label for="sort-select">Sort:</label>
+          <select id="sort-select">
+            <option value="newest">Newest</option>
+            <option value="duration-desc">Longest First</option>
+            <option value="duration-asc">Shortest First</option>
+            <option value="title-asc">Topic A–Z</option>
+          </select>
+          <button id="clear-completed-btn" type="button" class="btn-link">Clear Completed</button>
+        </div>
+      </div>
+
+      <div class="progress-wrap">
+        <div class="progress-label">
+          <span id="progress-text">0 of 240 minutes planned</span>
+          <span id="progress-pct">0%</span>
+        </div>
+        <div class="progress-track">
+          <div id="progress-fill" class="progress-fill" style="width: 0%;"></div>
+        </div>
+      </div>
+
+      <p id="status-msg" class="status-msg" role="status"></p>
+
+      <ul id="plan-list" class="plan-list"></ul>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
+
+
+
+       
+          
+   
+         
+    
+
+           
+      
+
+    
+
+    
