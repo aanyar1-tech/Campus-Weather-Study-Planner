@@ -27,8 +27,11 @@ Students often juggle outdoor breaks, campus commutes, and deep-focus study sess
 - **Live City Weather & Study Recommendations:** Search any city to fetch current weather conditions (such as temperature and sky/weather status) alongside practical study block recommendations.
 - **Study Task Management:** Create, filter, search, and sort study tasks with client-side persistence so your schedule stays intact across page refreshes.
 - **Input Validation & Fallback Error Handling:** Gracefully handles blank or invalid city names, upstream weather API errors, and request timeouts with clear UI feedback and structured HTTP error responses without crashing the server.
+- **Health Monitoring:** Exposes `/api/health` ([http://127.0.0.1:3000/api/health](http://127.0.0.1:3000/api/health)) to verify application readiness behind Nginx and HAProxy.
 
- API Endpoints & Error Handling
+---
+
+## API Endpoints & Error Handling
 
 | Endpoint | Method | Purpose | Behavior on Error / Edge Cases |
 | :--- | :--- | :--- | :--- |
@@ -45,7 +48,8 @@ Campus-Weather-Study-Planner/
 ├── docs/                 # Terminal verification screenshots (lb-loop.png, lb-headers.png)
 ├── public/               # Frontend HTML, CSS, and client-side JavaScript
 ├── server.js             # Express/Node.js backend, API routes, and error handlers
-├── deploy_lb.sh          # Load balancer / reverse proxy deployment script
+├── deploy_lb.sh          # Load balancer deployment script
+├── deploy_web.sh         # Web node deployment script
 ├── .env.example          # Environment variable template (safe for Git)
 ├── .gitignore            # Excludes .env, node_modules, and local logs
 ├── package.json          # Project metadata, scripts, and dependencies
