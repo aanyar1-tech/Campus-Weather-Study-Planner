@@ -1,0 +1,381 @@
+{
+  "reportVersion": "1.0",
+  "assignmentId": "assignment-1795630866284-ltv2isf",
+  "assignmentName": "Playing Around with APIs",
+  "generatedAt": 1795630914006,
+  "metrics": {
+    "assignmentId": "assignment-1795630866284-ltv2isf",
+    "authorship": {
+      "totalLines": 1413,
+      "manualLines": 1,
+      "permittedAILines": 0,
+      "prohibitedAILines": 1,
+      "flaggedAILines": 1411,
+      "authorshipPercentage": 99.92922859164898,
+      "prohibitedPercentage": 0.07077140835102619
+    },
+    "ownership": {
+      "score": 100,
+      "filesReviewed": 1,
+      "filesUnreviewed": 0,
+      "unreviewedLines": 0,
+      "averageReviewTimeMs": 195039
+    },
+    "violations": [
+      {
+        "type": "unreviewed-large-paste",
+        "severity": "medium",
+        "message": "Large paste accepted after only 0ms (minimum 5000ms)",
+        "details": {
+          "filePath": "c:/Users/HP/OneDrive/Desktop/Campus-Weather-Study-Planner/public/styles.css",
+          "reviewTimeMs": 0,
+          "lines": 471,
+          "characters": 8521
+        },
+        "firstDetectedAt": 1795363164444,
+        "lastDetectedAt": 1795363359177,
+        "count": 3
+      },
+      {
+        "type": "agentic-use",
+        "severity": "high",
+        "message": "Agentic AI 
+        "details": {
+          "filePath": "c:/Users/HP/OneDrive/Desktop/Campus-Weather-Study-Planner/public/styles.css",
+          "detectionMethod": "external-file-change",
+          "lines": 1,
+          "tool": "ai"
+        },
+        "firstDetectedAt": 1795363171067,
+        "lastDetectedAt": 1795363171067,
+        "count": 1
+      },
+      {
+        "type": "authorship-exceeded",
+        "severity": "medium",
+        "message": "AI authorship 29.9% exceeds limit of 20%",
+        "details": {
+          "actualPercentage": 99.92922859164898,
+          "maxAllowedPercentage": 20,
+          "aiLines": 1412
+        },
+        "firstDetectedAt": 1795363359177,
+        "lastDetectedAt": 1795363359177,
+        "count": 1
+      },
+      {
+        "type": "tracking-gap",
+        "severity": "low",
+        "message": "No tracking activity for 61678 seconds during assignment window",
+        "details": {
+          "startTime": 1795298400000,
+          "endTime": 1795360078443,
+          "durationSeconds": 61678
+        },
+        "firstDetectedAt": 1795360078443,
+        "lastDetectedAt": 1795630914005,
+        "count": 3
+      }
+    ],
+    "rawEvents": [
+      {
+        "id": 399,
+        "timestamp": 1795360078443,
+        "tool": "claude-code",
+        "eventType": "code-generated",
+        "linesOfCode": 1,
+        "charactersCount": 3,
+        "filePath": "c:/Users/HP/OneDrive/Desktop/Campus-Weather-Study-Planner/deploy_web.sh",
+        "language": "shellscript",
+        "metadata": {
+          "manual": true,
+          "source": "manual-typing",
+          "duration": 2721
+        },
+        "reviewQuality": null,
+        "isReviewed": false,
+        "isAgentMode": false,
+        "source": "manual",
+        "detectionMethod": "manual-typing",
+        "confidence": "high"
+      },
+      {
+        "id": 400,
+        "timestamp": 1795363164444,
+        "tool": "ai",
+        "eventType": "code-generated",
+        "linesOfCode": 471,
+        "linesRemoved": 0,
+        "linesChanged": 471,
+        "charactersCount": 8521,
+        "filePath": "c:/Users/HP/OneDrive/Desktop/Campus-Weather-Study-Planner/public/styles.css",
+        "language": "css",
+        "metadata": {
+          "detectionMethod": "large-paste",
+          "confidence": "high",
+          "isAgentGenerated": true
+        },
+        "reviewQuality": null,
+        "isReviewed": false,
+        "isAgentMode": false,
+        "source": "ai",
+        "detectionMethod": "large-paste",
+        "confidence": "high"
+      },
+      {
+        "id": 401,
+        "timestamp": 1795363171067,
+        "tool": "ai",
+        "eventType": "code-generated",
+        "linesOfCode": 1,
+        "linesRemoved": 0,
+        "linesChanged": 1,
+        "charactersCount": 8521,
+        "filePath": "c:/Users/HP/OneDrive/Desktop/Campus-Weather-Study-Planner/public/styles.css",
+        "language": "css",
+        "metadata": {
+          "source": "external-file-change",
+          "detectionMethod": "external-file-change",
+          "confidence": "high",
+          "isAgentMode": true,
+          "isAgentGenerated": true
+        },
+        "reviewQuality": null,
+        "isReviewed": false,
+        "isAgentMode": true,
+        "source": "ai",
+        "detectionMethod": "external-file-change",
+        "confidence": "high"
+      },
+      {
+        "id": 402,
+        "timestamp": 1795363291842,
+        "tool": "ai",
+        "eventType": "code-generated",
+        "linesOfCode": 470,
+        "linesRemoved": 0,
+        "linesChanged": 470,
+        "charactersCount": 8514,
+        "filePath": "c:/Users/HP/OneDrive/Desktop/Campus-Weather-Study-Planner/public/styles.css",
+        "language": "css",
+        "metadata": {
+          "detectionMethod": "large-paste",
+          "confidence": "high",
+          "isAgentGenerated": true
+        },
+        "reviewQuality": null,
+        "isReviewed": false,
+        "isAgentMode": false,
+        "source": "ai",
+        "detectionMethod": "large-paste",
+        "confidence": "high"
+      },
+      {
+        "id": 403,
+        "timestamp": 1795363359177,
+        "tool": "ai",
+        "eventType": "code-generated",
+        "linesOfCode": 470,
+        "linesRemoved": 0,
+        "linesChanged": 470,
+        "charactersCount": 8520,
+        "filePath": "c:/Users/HP/OneDrive/Desktop/Campus-Weather-Study-Planner/public/styles.css",
+        "language": "css",
+        "metadata": {
+          "detectionMethod": "large-paste",
+          "confidence": "high",
+          "isAgentGenerated": true
+        },
+        "reviewQuality": null,
+        "isReviewed": false,
+        "isAgentMode": false,
+        "source": "ai",
+        "detectionMethod": "large-paste",
+        "confidence": "high"
+      }
+    ],
+    "fileReviews": [
+      {
+        "filePath": "c:/Users/HP/OneDrive/Desktop/Campus-Weather-Study-Planner/public/styles.css",
+        "date": "2026-11-22",
+        "tool": "ai",
+        "reviewQuality": "thorough",
+        "reviewScore": 100,
+        "isReviewed": true,
+        "linesGenerated": 1412,
+        "linesChanged": 1412,
+        "linesSinceReview": 0,
+        "linesAdded": 470,
+        "linesRemoved": 0,
+        "charactersCount": 34076,
+        "agentSessionId": "manual-session",
+        "isAgentGenerated": true,
+        "wasFileOpen": false,
+        "firstGeneratedAt": 1795363164444,
+        "lastReviewedAt": 1795363941818,
+        "totalReviewTime": 195039,
+        "language": "css",
+        "modificationCount": 5,
+        "totalTimeInFocus": 195039,
+        "scrollEventCount": 9,
+        "cursorMovementCount": 0,
+        "editsMade": true,
+        "lastOpenedAt": 1795363273388,
+        "reviewSessionsCount": 0,
+        "reviewedInTerminal": false
+      }
+    ],
+    "trackingGaps": [
+      {
+        "startTime": 1795298400000,
+        "endTime": 1795360078443,
+        "durationSeconds": 61678
+      },
+      {
+        "startTime": 1795360078443,
+        "endTime": 1795363164444,
+        "durationSeconds": 3086
+      },
+      {
+        "startTime": 1795363359177,
+        "endTime": 1795630914005,
+        "durationSeconds": 267554
+      }
+    ]
+  },
+  "policy": {
+    "maxAuthorshipPercentage": 20,
+    "minOwnershipScore": 100,
+    "exemptFileGlobs": [
+      "**/README*",
+      "**/*.md",
+      "**/package.json",
+      "**/package-lock.json",
+      "**/npm-shrinkwrap.json",
+      "**/yarn.lock",
+      "**/pnpm-lock.yaml",
+      "**/poetry.lock",
+      "**/Pipfile.lock",
+      "**/Gemfile.lock",
+      "**/Cargo.lock",
+      "**/composer.lock",
+      "**/go.sum",
+      "**/.gitignore",
+      "**/LICENSE*",
+      "**/tsconfig.json",
+      "**/.eslintrc*",
+      "**/.prettierrc*",
+      "**/node_modules/**",
+      "**/bower_components/**",
+      "**/.npm/**",
+      "**/venv/**",
+      "**/.venv/**",
+      "**/env/**",
+      "**/__pycache__/**",
+      "**/.tox/**",
+      "**/.mypy_cache/**",
+      "**/.pytest_cache/**",
+      "**/.ruff_cache/**",
+      "**/site-packages/**",
+      "**/.git/**",
+      "**/.hg/**",
+      "**/.svn/**",
+      "**/dist/**",
+      "**/build/**",
+      "**/out/**",
+      "**/coverage/**",
+      "**/.nyc_output/**",
+      "**/.next/**",
+      "**/.nuxt/**",
+      "**/target/**",
+      "**/vendor/**",
+      "**/.idea/**",
+      "**/.vs/**",
+      "**/*.pyc",
+      "**/*.pyo",
+      "**/*.min.js",
+      "**/*.bundle.js",
+      "**/*.map",
+      "**/package-lock.json",
+      "**/npm-shrinkwrap.json",
+      "**/yarn.lock",
+      "**/pnpm-lock.yaml",
+      "**/poetry.lock",
+      "**/Pipfile.lock",
+      "**/Gemfile.lock",
+      "**/Cargo.lock",
+      "**/composer.lock",
+      "**/go.sum"
+    ],
+    "prohibitedMethods": [
+      "external-file-change",
+      "git-commit-marker"
+    ],
+    "permittedMethods": [
+      "inline-completion-api"
+    ],
+    "flaggedMethods": [
+      "large-paste",
+      "change-velocity"
+    ],
+    "minLargePasteReviewTimeMs": 5000,
+    "maxTrackingGapSeconds": 1800
+  },
+  "exclusionAudit": [
+    {
+      "id": 1,
+      "timestamp": 1795366598900,
+      "globs": [],
+      "source": "assignment-activated"
+    },
+    {
+      "id": 2,
+      "timestamp": 1795366861114,
+      "globs": [],
+      "source": "assignment-activated"
+    },
+    {
+      "id": 3,
+      "timestamp": 1795500456943,
+      "globs": [],
+      "source": "assignment-activated"
+    },
+    {
+      "id": 4,
+      "timestamp": 1795500594783,
+      "globs": [],
+      "source": "assignment-activated"
+    },
+    {
+      "id": 5,
+      "timestamp": 1795500669619,
+      "globs": [],
+      "source": "assignment-activated"
+    },
+    {
+      "id": 6,
+      "timestamp": 1795500852827,
+      "globs": [],
+      "source": "assignment-activated"
+    },
+    {
+      "id": 7,
+      "timestamp": 1795501236993,
+      "globs": [],
+      "source": "assignment-activated"
+    },
+    {
+      "id": 8,
+      "timestamp": 1795630866299,
+      "globs": [],
+      "source": "assignment-activated"
+    }
+  ],
+  "studentIdentifier": "a.anyar1@alustudent.com",
+  "repoUrl": "C:\\Users\\HP\\OneDrive\\Desktop\\Campus-Weather-Study-Planner>",
+  "repoHeadCommit": "ae1852692e8449266e4e2c39841350924c013d09",
+  "integrity": {
+    "algorithm": "sha256",
+    "hash": "77a57358c9c4507fb7a4e3a49768fb72e4d36d728a76df9ff8259784549b03c6"
+  }
+}
